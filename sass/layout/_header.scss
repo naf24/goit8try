@@ -1,0 +1,21 @@
+.header-studio {
+  background-color: var(--white);
+  border: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-portfolio {
+  background-color: var(--white);
+  border: 1px solid #ececec;
+}
+
+.header span {
+  color: var(--title-text-color);
+}
