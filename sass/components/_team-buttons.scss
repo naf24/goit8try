@@ -1,4 +1,4 @@
-.hero__buttons {
+.team__buttons {
   display: flex;
   padding: 0;
   align-items: center;
@@ -6,7 +6,7 @@
   background-color: var(--white);
 }
 
-.hero__buttons .hero__btn {
+.team__buttons .team__btn {
   display: block;
   padding: 0;
   border: none;
@@ -27,7 +27,7 @@
   }
 }
 
-.hero__icon {
+.team__icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
@@ -43,13 +43,13 @@
   }
 }
 
-.hero__btn:hover .hero__icon,
-.hero__btn:hover .hero__icon {
+.team__btn:hover .team__icon,
+.team__btn:hover .team__icon {
   fill: var(--white);
 }
 
-.hero__btn:hover .hero__icon,
-.hero__btn:focus .hero__icon {
+.team__btn:hover .team__icon,
+.team__btn:focus .team__icon {
   fill: var(--white);
   background-color: var(--accent-color);
 }

@@ -1,0 +1,43 @@
+.team {
+  background-color: #f5f4fa;
+  margin-bottom: var(--base-margin);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team__list {
+  display: flex;
+}
+.team__position {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.team__text {
+  padding: 30px 30px 0px 30px;
+  margin-bottom: 16px;
+}
+
+.team__title {
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team__name {
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+}
