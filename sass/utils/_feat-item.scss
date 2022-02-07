@@ -1,13 +1,13 @@
 .features__item {
   text-align: center;
-  // padding-top: 30px;
-  // padding-bottom: 30px;
-  // width: 270px;
+
   @media screen and (min-width: 768px) {
-    flex-basis: 50%;
+    width: calc(100% - 2 * 30px) / 2;
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: 30%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: calc(100% - 3 * 30px) / 4;
   }
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
