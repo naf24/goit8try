@@ -10,6 +10,10 @@
 // .team__list {
 //   // display: flex;
 // }
+.team__img {
+  width: 100%;
+}
+
 .team__position {
   font-family: Roboto;
   font-size: 16px;
@@ -27,9 +31,12 @@
 .team__title {
   color: var(--title-text-color);
   font-family: inherit;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.67;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  // font-weight: bold;
+  // font-size: 36px;
+  // line-height: 1.67;
   text-align: center;
   margin-bottom: 30px;
   // margin-bottom: 50px;
