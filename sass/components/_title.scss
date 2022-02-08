@@ -1,11 +1,21 @@
 .hero__title {
   font-weight: 900;
-  font-size: 26px;
+
   // font-size: 44px;
   // line-height: 1.4;
-  line-height: 1.6;
-  // text-align: center;
+
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  @media screen and (min-width: 250px) and (max-width: 767px) {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }

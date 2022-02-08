@@ -1,6 +1,8 @@
 .services {
-  display: none;
   padding-bottom: 94px;
+  @media screen and (max-width: 1599px) {
+    display: none;
+  }
 }
 
 .services__list {

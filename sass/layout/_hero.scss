@@ -1,19 +1,27 @@
 .hero {
-  // margin-left: 60px;
-  // margin-right: 60px;
-  width: 480px;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #2f303a;
   color: #ffffff;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    height: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+    height: 600px;
+  }
 }
 .overlay {
-  // margin-left: auto;
-  // margin-right: auto;
-  width: 480px;
+  width: 100%;
+  height: 400px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -26,4 +34,22 @@
   background-size: cover;
 
   outline: 1px solid var(--title-text-color);
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    height: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+    height: 600px;
+  }
+}
+.hero__content {
+  width: calc(100%-120px);
+  padding-left: 60px;
+  padding-right: 60px;
 }
