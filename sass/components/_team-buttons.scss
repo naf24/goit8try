@@ -26,6 +26,9 @@
     fill: white;
   }
 }
+.team__li:not(:last-child) {
+  margin-right: 10px;
+}
 
 .team__icon {
   width: 20px;

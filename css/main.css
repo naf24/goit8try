@@ -37,7 +37,7 @@ body.modal-open {
   border: 1px solid red;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 250px) {
   .container {
     flex-basis: 480px;
   }
@@ -282,6 +282,10 @@ body.modal-open {
 .team__buttons .team__btn:hover {
   background-color: var(--accent-color);
   fill: white;
+}
+
+.team__li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .team__icon {
@@ -541,6 +545,12 @@ body.modal-open {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients {
+    padding-bottom: -30px;
+  }
+}
+
 .clients__title {
   color: var(--title-text-color);
   font-family: inherit;
@@ -548,12 +558,19 @@ body.modal-open {
   font-size: 28px;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients__list {
   display: flex;
-  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 250px) {
+  .clients__list {
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -15px;
+  }
 }
 
 .clients__link {
@@ -572,7 +589,6 @@ body.modal-open {
 }
 
 .clients__item {
-  width: calc((100% - 2 * 30px) / 2);
   height: 92px;
   box-sizing: border-box;
   border-radius: 4px;
@@ -581,11 +597,17 @@ body.modal-open {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .clients__item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .clients__icon {
+  width: 106px;
+  height: 60px;
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1098,6 +1120,13 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .features__item {
   text-align: left;
 }
@@ -1163,6 +1192,13 @@ li {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
