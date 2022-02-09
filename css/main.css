@@ -31,9 +31,10 @@ body.modal-open {
 
 .container {
   width: 100%;
-  margin: 0;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid red;
 }
 
@@ -91,9 +92,11 @@ body.modal-open {
   color: var(--white);
 }
 
-.site-nav__list {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1600px) {
+  .site-nav__list {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav__link {
@@ -124,8 +127,10 @@ body.modal-open {
   position: relative;
 }
 
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1600px) {
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link-current::after {
@@ -138,6 +143,12 @@ body.modal-open {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .site-nav__link-current::after {
+    display: none;
+  }
 }
 
 .header__connect {
@@ -417,12 +428,14 @@ body.modal-open {
   border: 1px solid #ececec;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+@media screen and (min-width: 1600px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header-portfolio {
@@ -432,6 +445,26 @@ body.modal-open {
 
 .header span {
   color: var(--title-text-color);
+}
+
+.header-media {
+  display: flex;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.header-media:hover {
+  text-decoration: underline;
+}
+
+.header-media:focus {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1600px) {
+  .header-media {
+    display: none;
+  }
 }
 
 .hero {

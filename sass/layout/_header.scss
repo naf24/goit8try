@@ -4,11 +4,13 @@
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header-portfolio {
@@ -19,3 +21,19 @@
 .header span {
   color: var(--title-text-color);
 }
+.header-media {
+  display: flex;
+  text-decoration: none;
+  color: var(--accent-color);
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    text-decoration: underline;
+  }
+  @media screen and (min-width: 1600px) {
+    display: none;
+  }
+}
+// .header-media__link {
+// }
