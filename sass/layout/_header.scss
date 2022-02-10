@@ -24,7 +24,7 @@
 .header-media {
   display: flex;
   text-decoration: none;
-  color: var(--accent-color);
+  color: #2196f3;
   &:hover {
     text-decoration: underline;
   }
@@ -35,5 +35,7 @@
     display: none;
   }
 }
-// .header-media__link {
-// }
+.header-media__link {
+  text-decoration: none;
+  color: #2196f3;
+}
