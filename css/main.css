@@ -98,11 +98,17 @@ body.modal-open {
   color: var(--white);
 }
 
-.site-nav__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 60px;
+.header .site-nav {
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .header .site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+  }
 }
 
 .site-nav__link {
@@ -162,9 +168,16 @@ body.modal-open {
 }
 
 .header__contacts {
-  display: flex;
   margin-left: auto;
   margin-right: 0;
+}
+
+@media screen and (min-width: 1600px) {
+  .header__contacts {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
 
 .header__link {
@@ -439,14 +452,22 @@ body.modal-open {
   margin-bottom: 10px;
 }
 
-.header-studio {
-  background-color: var(--white);
+.header {
   border: 1px solid #ececec;
 }
 
 @media screen and (min-width: 480px) {
-  .header-container {
+  .header {
     position: relative;
+  }
+}
+
+.header-studio {
+  background-color: var(--white);
+}
+
+@media screen and (min-width: 480px) {
+  .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -466,7 +487,6 @@ body.modal-open {
 
 .header-portfolio {
   background-color: var(--white);
-  border: 1px solid #ececec;
 }
 
 .menu-button {
@@ -489,14 +509,36 @@ body.modal-open {
   display: none;
 }
 
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 48px 83px 48px 40px;
+  text-align: left;
+  font-size: 40px;
+  height: 796px;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
 .header span {
   color: var(--title-text-color);
 }
 
 .header-media {
   display: flex;
-  text-decoration: none;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
   color: #2196f3;
+  text-decoration: none;
 }
 
 .header-media:hover {
@@ -516,17 +558,6 @@ body.modal-open {
 .header-media__link {
   text-decoration: none;
   color: #2196f3;
-}
-
-.mobile-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 40px;
-  text-align: left;
-  font-size: 40px;
 }
 
 .hero {

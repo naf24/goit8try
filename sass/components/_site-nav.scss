@@ -1,12 +1,21 @@
-.site-nav__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 60px;
-
-  @media screen and (min-width: 1600px) {
+.header .site-nav {
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
   }
 }
+// .site-nav__list {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   min-height: 60px;
+
+//   @media screen and (min-width: 1600px) {
+//   }
+// }
 
 .site-nav__link {
   padding-top: 32px;
