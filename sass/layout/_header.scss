@@ -33,17 +33,20 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  fill: #212121;
 }
-
-.menu-button .icon-close {
+.menu-button .icon-menu {
   display: none;
+}
+.menu-button .icon-close {
+  display: block;
 }
 
 .menu-button.is-open .icon-close {
-  display: block;
+  display: none;
 }
 .menu-button.is-open .icon-menu {
-  display: none;
+  display: block;
 }
 .menu-container {
   display: none;
