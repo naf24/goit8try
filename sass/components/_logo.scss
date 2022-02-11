@@ -13,6 +13,10 @@
   }
 }
 
+.menu-button.is-open .site-nav.logo {
+  display: none;
+}
+
 .logo__footer {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
