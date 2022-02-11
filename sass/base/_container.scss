@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -14,7 +13,7 @@
   @media screen and (min-width: 768px) {
     flex-basis: 768px;
   }
-  @media screen and (min-width: 1600px) {
-    flex-basis: 1600px;
+  @media screen and (min-width: 1200px) {
+    flex-basis: 1200px;
   }
 }

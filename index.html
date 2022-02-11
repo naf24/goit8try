@@ -22,85 +22,44 @@
   </head>
   <body>
 
-    <!-- Шапка-->
+         <!-- Шапка -->
 
-    <header class="header header-studio">
-      <div class="container header-container">
-            <nav class="site-nav">
-            <a href="" class="logo">Web<span class="logo__span">Studio</span></a>
-            <button type="button" class="menu-button is-open" data-menu-button>
-              <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                <use class="icon-menu" href="./imgs/icons.svg/sprite.svg#icon-menu"></use>
-                <use class="icon-close" href="./imgs/icons.svg/sprite.svg#close"></use>
-              </svg>
-            </button>
+    <header class="header header-portfolio">
+    <div class="container header-container">
 
-            <div class="mobile-menu">
-               <ul class="site-nav__list">
+           <nav class="site-nav">
+        <a href="" class="logo">Web<span class="logo__span">Studio</span></a>
+
+        <button type="button" 
+        class="menu-button is-open"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button>
+          <svg 
+          width="22" 
+          height="22" 
+          aria-label="Переключатель мобильного меню">
+            <use class="icon-close" href="./imgs/icons.svg/sprite.svg#close">
+            </use>
+            <use  class="icon-menu" href="./imgs/icons.svg/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+     <div class="menu-container" 
+     id="menu-container" 
+     data-menu>
+          <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link-current">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link ">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
-        </nav>
-        <div class="header__connect">
-          <ul class="header__contacts">
-            <li class="header__item">
-              <a class="header__link"
-                href="mailto:info@devstudio.com">
-                
-                <svg class="header__icon" width="16px" height="12px">
-                  <use href="imgs/icons.svg/sprite.svg#headerenvelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-
-            <li class="header__item">
-              <a class="header__link" href="tel:+380961111111" >
-                <svg class="header__icon" width="10px" height="16px">
-                  <use href="imgs/icons.svg/sprite.svg#headersmartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-            <ul class="header-media">
-              <li class="header-media__link"> 
-                <a href="">Instagram</a>
-                </li>
-              <li class="header-media__link">
-                <a href="">Twitter</a>
-              </li>
-              <li class="header-media__link">
-                <a href="">Facebook</a>
-              </li>
-              <li class="header-media__link">
-                <a href="">LinkedIn</a>
-                </li>
-            </ul>
-          </ul>
-            </div>
-       
-
-    
-          <!-- <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link site-nav__link-current">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__connect">
+                 <div class="header__connect">
           <ul class="header__contacts">
             <li class="header__item">
               <a class="header__link"
@@ -122,12 +81,26 @@
                 +38 096 111 11 11
               </a>
             </li>
-    
-          </ul> -->
+          </ul>
+          </div>
+                     <ul class="header-media">
+              <li> 
+                <a class="header-media__link" href="">Instagram</a>
+                </li>
+              <li>
+                <a class="header-media__link" href="">Twitter</a>
+              </li>
+              <li>
+                <a  class="header-media__link" href="">Facebook</a>
+              </li>
+              <li>
+                <a  class="header-media__link" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </nav>
         </div>
-      </div> 
-    </header>
-
+        </div>
+    </header> 
     <main>
 
     <!--Герой-->

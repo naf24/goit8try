@@ -20,98 +20,111 @@
 
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
-      
   </head>
 
-    <body>
-      <!-- Шапка -->
+  <body>
+    <!-- Шапка -->
 
     <header class="header header-portfolio">
-    <div class="container header-container">
+      <div class="container header-container">
+        <nav class="site-nav">
+          <a href="" class="logo">Web<span class="logo__span">Studio</span></a>
 
-           <nav class="site-nav">
-        <a href="" class="logo">Web<span class="logo__span">Studio</span></a>
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="22"
+              height="22"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close"
+                href="./imgs/icons.svg/sprite.svg#close"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./imgs/icons.svg/sprite.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
 
-        <button type="button" 
-        class="menu-button is-open"
-        aria-expanded="false"
-        aria-controls="menu-container"
-        data-menu-button>
-          <svg 
-          width="22" 
-          height="22" 
-          aria-label="Переключатель мобильного меню">
-            <use class="icon-close" href="./imgs/icons.svg/sprite.svg#close">
-            </use>
-            <use  class="icon-menu" href="./imgs/icons.svg/sprite.svg#icon-menu"></use>
-          </svg>
-        </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation">
+              <ul class="site-nav__list">
+                <li class="site-nav__item">
+                  <a href="./index.html" class="site-nav__link">Студия</a>
+                </li>
+                <li class="site-nav__item">
+                  <a
+                    href="./portfolio.html"
+                    class="site-nav__link site-nav__link-current"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="site-nav__item">
+                  <a href="" class="site-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__connect">
+              <ul class="header__contacts">
+                <li class="header__item">
+                  <a class="header__link" href="mailto:info@devstudio.com">
+                    <svg class="header__icon" width="16px" height="12px">
+                      <use
+                        href="imgs/icons.svg/sprite.svg#headerenvelope"
+                      ></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
 
-     <div class="menu-container" 
-     id="menu-container" 
-     data-menu>
-          <ul class="site-nav__list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link-current">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-                 <div class="header__connect">
-          <ul class="header__contacts">
-            <li class="header__item">
-              <a class="header__link"
-                href="mailto:info@devstudio.com"
-               
-              >
-                <svg class="header__icon" width="16px" height="12px">
-                  <use href="imgs/icons.svg/sprite.svg#headerenvelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-
-            <li class="header__item">
-              <a class="header__link" href="tel:+380961111111" >
-                <svg class="header__icon" width="10px" height="16px">
-                  <use href="imgs/icons.svg/sprite.svg#headersmartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+                <li class="header__item">
+                  <a class="header__link" href="tel:+380961111111">
+                    <svg class="header__icon" width="10px" height="16px">
+                      <use
+                        href="imgs/icons.svg/sprite.svg#headersmartphone"
+                      ></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="media">
+              <ul class="header-media">
+                <li>
+                  <a class="header-media__link" href="">Instagram</a>
+                </li>
+                <li>
+                  <a class="header-media__link" href="">Twitter</a>
+                </li>
+                <li>
+                  <a class="header-media__link" href="">Facebook</a>
+                </li>
+                <li>
+                  <a class="header-media__link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
-                     <ul class="header-media">
-              <li> 
-                <a class="header-media__link" href="">Instagram</a>
-                </li>
-              <li>
-                <a class="header-media__link" href="">Twitter</a>
-              </li>
-              <li>
-                <a  class="header-media__link" href="">Facebook</a>
-              </li>
-              <li>
-                <a  class="header-media__link" href="">LinkedIn</a>
-                </li>
-            </ul>
         </nav>
-        </div>
-        </div>
-    </header> 
+      </div>
+    </header>
 
-      <!-- Секция с кнопками и карточками
+    <!-- Секция с кнопками и карточками
 <main>
   <section class="section buttons-cards">
     <div class="container">
   <h1 class="visually-hidden">Наши проекты</h1> -->
 
- <!--Фильтр-->
-       <!-- <div>
+    <!--Фильтр-->
+    <!-- <div>
 <ul class="buttons">
       
       <li class="buttons__item">
@@ -131,11 +144,10 @@
       </li>
     </ul>
  </div> -->
-      
 
-      <!--Проекты-->
+    <!--Проекты-->
 
-      <!-- <ul class=" card-set">
+    <!-- <ul class=" card-set">
 
     <li class="card-set__item">
       <div class="card-overlay"> 
@@ -282,14 +294,16 @@
 </section> 
 </main> -->
 
-      <!--Футер-->
+    <!--Футер-->
 
-       <footer class="footer">
+    <footer class="footer">
       <div class="container footer-body">
-      <!--обертка-->
-       <div class="footer__contacts">
+        <!--обертка-->
+        <div class="footer__contacts">
           <div class="logo__footer">
-            <a href="" class="logo__footer">Web<span class="logo__span--reverse">Studio</span></a>
+            <a href="" class="logo__footer"
+              >Web<span class="logo__span--reverse">Studio</span></a
+            >
           </div>
 
           <ul class="footer__contacts">
@@ -313,42 +327,38 @@
           </ul>
         </div>
         <div class="footer__socialmedia">
-            <h3 class="join">ПРИСОЕДИНЯЙТЕСЬ</h3>
-            <ul class="footer__sociallinks">
-              <li class="footer__joinitem">
-                  <a class="footer__joinlink" href="">
-                    <svg class="footer__icon">
-                      <use
-                        href="imgs/icons.svg/sprite.svg#icon-instagram"
-                      ></use>
-                    </svg>
-                  </a>
-              </li>
+          <h3 class="join">ПРИСОЕДИНЯЙТЕСЬ</h3>
+          <ul class="footer__sociallinks">
+            <li class="footer__joinitem">
+              <a class="footer__joinlink" href="">
+                <svg class="footer__icon">
+                  <use href="imgs/icons.svg/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
 
-              <li class="footer__joinitem">
-                  <a class="footer__joinlink" href="">
-                    <svg class="footer__icon">
-                      <use href="imgs/icons.svg/sprite.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-              </li>
-              <li class="footer__joinitem">
-                  <a class="footer__joinlink" href="">
-                    <svg class="footer__icon">
-                      <use
-                        href="./imgs/icons.svg/sprite.svg#icon-facebook"
-                      ></use>
-                    </svg>
-                  </a>
-              </li>
-              <li class="footer__joinitem">
-                  <a class="footer__joinlink" href="">
-                    <svg class="footer__icon">
-                      <use href="imgs/icons.svg/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-              </li>
-            </ul>
+            <li class="footer__joinitem">
+              <a class="footer__joinlink" href="">
+                <svg class="footer__icon">
+                  <use href="imgs/icons.svg/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__joinitem">
+              <a class="footer__joinlink" href="">
+                <svg class="footer__icon">
+                  <use href="./imgs/icons.svg/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__joinitem">
+              <a class="footer__joinlink" href="">
+                <svg class="footer__icon">
+                  <use href="imgs/icons.svg/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
         <form class="footer__form">
           <label class="footer-form__field">
@@ -370,8 +380,6 @@
         </form>
       </div>
     </footer>
-<script src="./js/mobile-menu.js"></script>
-     </body>
-</html> 
-  
-
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
