@@ -42,10 +42,10 @@
               height="22"
               aria-label="Переключатель мобильного меню"
             >
-              <use
+              <!-- <use
                 class="icon-close"
                 href="./imgs/icons.svg/sprite.svg#close"
-              ></use>
+              ></use> -->
               <use
                 class="icon-menu"
                 href="./imgs/icons.svg/sprite.svg#icon-menu"
@@ -53,9 +53,9 @@
             </svg>
           </button>
 
-          <div class="menu-container" id="menu-container" data-menu>
-            <div class="navigation">
-              <!-- <button
+          <!-- <div class="menu-container" id="menu-container" data-menu> -->
+          <!-- <div class="navigation">
+              <button
                 type="button"
                 class="menu-button is-open"
                 aria-expanded="false"
@@ -66,17 +66,17 @@
                   width="22"
                   height="22"
                   aria-label="Переключатель мобильного меню"
-                >
-                  <use
+                > -->
+          <!-- <use
                     class="icon-close"
                     href="./imgs/icons.svg/sprite.svg#close"
-                  ></use>
-                  <use
+                  ></use> -->
+          <!-- <use
                     class="icon-menu"
                     href="./imgs/icons.svg/sprite.svg#icon-menu"
                   ></use>
                 </svg>
-              </button> -->
+              </button>
               <ul class="site-nav__list">
                 <li class="site-nav__item">
                   <a href="./index.html" class="site-nav__link">Студия</a>
@@ -118,26 +118,11 @@
                 </li>
               </ul>
             </div>
-            <div class="media">
-              <ul class="header-media">
-                <li>
-                  <a class="header-media__link" href="">Instagram</a>
-                </li>
-                <li>
-                  <a class="header-media__link" href="">Twitter</a>
-                </li>
-                <li>
-                  <a class="header-media__link" href="">Facebook</a>
-                </li>
-                <li>
-                  <a class="header-media__link" href="">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          </div> -->
         </nav>
       </div>
     </header>
+    <!-- <div class="backdrop is-hidden"> -->
 
     <!-- Секция с кнопками и карточками
 <main>
@@ -402,6 +387,82 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+
+    <!--Mobile menu-->
+    <div class="mobile-menu is-hidden" data-menu>
+      <button
+        class="mobile-menu__close"
+        data-menu-close
+        type="button"
+        class="mobile-menu__button isopen"
+        aria-expanded="false"
+        aria-controls="menu-container"
+      >
+        <svg
+          class="mobile-menu__icon"
+          width="22"
+          height="22"
+          aria-label="Закрыть мобильное меню"
+        >
+          <use href="./imgs/icons.svg/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="content">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link">Студия</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              href="./portfolio.html"
+              class="mobile-menu__link mobile-menu__link-current"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="mailto:info@devstudio.com">
+              <svg class="mobile-menu__icon" width="16px" height="12px">
+                <use href="imgs/icons.svg/sprite.svg#headerenvelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="tel:+380961111111">
+              <svg class="mobile-menu__icon" width="10px" height="16px">
+                <use href="imgs/icons.svg/sprite.svg#headersmartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="media">
+        <ul class="header-media">
+          <li>
+            <a class="header-media__link" href="">Instagram</a>
+          </li>
+          <li>
+            <a class="header-media__link" href="">Twitter</a>
+          </li>
+          <li>
+            <a class="header-media__link" href="">Facebook</a>
+          </li>
+          <li>
+            <a class="header-media__link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
