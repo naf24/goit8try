@@ -1,5 +1,6 @@
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   font-family: inherit;
   margin-bottom: 50px;
   font-family: inherit;
@@ -8,7 +9,6 @@
   line-height: 1.6;
   min-width: 70px;
   @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     justify-content: center;
