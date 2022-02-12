@@ -748,7 +748,7 @@ body.modal-open {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .services__list {
     display: flex;
   }
