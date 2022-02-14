@@ -227,11 +227,37 @@
         <ul class="team__list">
 
             <li class="team__item">
-              <img class="team__img"
+              <picture>
+                <source srcset="
+                ./index-images/team1-mobile.jpeg 1x 480vw, 
+                ./index-images/team1-mobile@2x.jpeg 2x 480vw" 
+               
+                />
+              
+
+                <source srcset="
+                ./index-images/team1-desktop.jpeg 1x 1200vw, 
+                ./index-images/team1-desktop@2x.jpeg 2x 1200vw" 
+                 
+              />
+                   
+
+                <source srcset="
+                ./index-images/team1-tablet.jpeg 1x 768vw,
+                ./index-images/team1-tablet@2x.jpeg 2x 768vw"
+                
+                />
+                
+
+                <img src="./index-images/team1-tablet.jpg" 
+                alt="Игорь Демьяненко Продакт Дизайнер"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw">
+              </picture>
+              <!-- <img class="team__img"
                 src="./imgs/img4.jpg"
                 alt="Игорь Демьяненко Продакт Дизайнер"
                 
-              />
+              /> -->
               <div class="team__text">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>

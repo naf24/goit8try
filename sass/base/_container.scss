@@ -6,13 +6,13 @@
   min-width: 320px;
   max-width: 1200px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     flex-basis: 480px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     flex-basis: 768px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     flex-basis: 1200px;
   }
 }
