@@ -115,7 +115,17 @@
 
     <li class="card-set__item">
       <div class="card-overlay"> 
-        <img src="./imgs/img21.jpg" alt="Сайт" class="card-img">
+        <img srcset="
+        ./portfolio-images/project1-mobile.jpg 480vw,
+        ./portfolio-images/project1-tablet.jpg 384vw,
+        ./portfolio-images/project1-desktop.jpg 400vw
+        "
+    
+        src="./portfolio-images/project1-desktop.jpg" 
+        alt="Сайт" 
+        sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, 100wv"
+        class="card-img"
+        >
         <div class="card-overlay__container">
           <p class="card-overlay__text">Технокряк это современная площадка распространения 
             коронавируса. Компании используют эту платформу для
