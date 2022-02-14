@@ -20,10 +20,8 @@
 
 .clients__list {
   display: flex;
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .clients__item {
