@@ -170,12 +170,33 @@
 
             <li class="services__item">
               
-              <img
-                src="./imgs/img1.jpg"
-                alt="На столе стоит компьютер, руки набирают что-то на клавиатуре"
-                width="370"
-                height="294"
-              />
+              <div class="photos__thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/whattodo-1-1200@1x.webp 1x,
+                      ./images/desktop/whattodo-1-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/whattodo-1-1200@1x.jpg 1x,
+                      ./images/desktop/whattodo-1-1200@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    src="./images/desktop/whattodo-1-1200@1x.jpg"
+                    loading="lazy"
+                    alt="Человек печатает текст на клавиатуре"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
               <div class="services__actions">
             <link aria-label="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ" class="item" >
             <svg class="icon" >
@@ -186,12 +207,33 @@
           </div>
             </li>            
             <li class="services__item">
-              <img
-                src="./imgs/img2.jpg"
-                alt="На столе стоит компьютер, левая рука держит телефон, правая прикасается к тачпаду"
-                width="370"
-                height="294"
-              />
+              <div class="photos__thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/whattodo-2-1200@1x.webp 1x,
+                      ./images/desktop/whattodo-2-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/whattodo-2-1200@1x.jpg 1x,
+                      ./images/desktop/whattodo-2-1200@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    src="./images/desktop/whattodo-2-1200@2x.jpg"
+                    loading="lazy"
+                    alt="Человек смотрит на смартфон перед ноутбуком"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
               <div class="services__actions">
               <link aria-label="МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ" class="item">
               <svg class="icon">
@@ -201,12 +243,33 @@
               </div>
             </li>
             <li class="services__item">
-              <img
-                src="./imgs/img3.jpg"
-                alt="На столе стоит компьютер, левая рука держит планшет с палитрой цветов, правая рука держит стилиус"
-                width="370"
-                height="294"
-              />
+              <div class="photos__thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/whattodo-3-1200@1x.webp 1x,
+                      ./images/desktop/whattodo-3-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/desktop/whattodo-3-1200@1x.jpg 1x,
+                      ./images/desktop/whattodo-3-1200@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    src="./images/desktop/whattodo-3-1200@2x.jpg"
+                    loading="lazy"
+                    alt="Цветовая палитра на экране планшета"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
               <div class="services__actions">
               <link aria-label="ДИЗАЙНЕРСКИЕ РЕШЕНИЯ" class="item">
               <svg class="icon">
@@ -228,37 +291,65 @@
         <ul class="team__list">
 
             <li class="team__item">
-              <picture>
-                <source srcset=""
-          
-               
-               
-                />
               
-
-                <source srcset=" "
-               
-                
-                 
-              />
-                   
-
-                <source srcset="
-              
-             "
-                
+                <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team-1-1200@1x.webp 1x,
+                    ./images/desktop/team-1-1200@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
                 />
-                
+                <source
+                  srcset="
+                    ./images/tablet/team-1-768@1x.webp 1x,
+                    ./images/tablet/team-1-768@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-1-480@1x.webp 1x,
+                    ./images/mobile/team-1-480@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
 
-                <img src="./index-images/team1-tablet.jpg" 
-                alt="Игорь Демьяненко Продакт Дизайнер"
-                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw">
-              </picture>
-              <!-- <img class="team__img"
-                src="./imgs/img4.jpg"
-                alt="Игорь Демьяненко Продакт Дизайнер"
-                
-              /> -->
+                <source
+                  srcset="
+                    ./images/desktop/team-1-1200@1x.jpg 1x,
+                    ./images/desktop/team-1-1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-1-768@1x.jpg 1x,
+                    ./images/tablet/team-1-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-1-480@1x.jpg 1x,
+                    ./images/mobile/team-1-480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/mobile/team-1-480@1x.jpg"
+                  loading="lazy"
+                  alt="Мужчина в очках и с бородой"
+                  title="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>     
+              
               <div class="team__text">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -305,12 +396,63 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img"
-                src="./imgs/img5.jpg"
-                alt="Ольга Репина Фронтенд Девелопер"
-                
-               
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team-2-1200@1x.webp 1x,
+                    ./images/desktop/team-2-1200@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-2-768@1x.webp 1x,
+                    ./images/tablet/team-2-768@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-2-480@1x.webp 1x,
+                    ./images/mobile/team-2-480@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/desktop/team-2-1200@1x.jpg 1x,
+                    ./images/desktop/team-2-1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-2-768@1x.jpg 1x,
+                    ./images/tablet/team-2-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-2-480@1x.jpg 1x,
+                    ./images/mobile/team-2-480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/mobile/team-2-480@1x.jpg"
+                  loading="lazy"
+                  alt="Женщина-блондинка в очках и костюме"
+                  title="Ольга Репина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -357,11 +499,63 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img"
-                src="./imgs/img6.jpg"
-                alt="Николай Тарасов Маркетинг"
-               
-              />
+               <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team-3-1200@1x.webp 1x,
+                    ./images/desktop/team-3-1200@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-3-768@1x.webp 1x,
+                    ./images/tablet/team-3-768@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-3-480@1x.webp 1x,
+                    ./images/mobile/team-3-480@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/desktop/team-3-1200@1x.jpg 1x,
+                    ./images/desktop/team-3-1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-3-768@1x.jpg 1x,
+                    ./images/tablet/team-3-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-3-480@1x.jpg 1x,
+                    ./images/mobile/team-3-480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/mobile/team-3-480@1x.jpg"
+                  loading="lazy"
+                  alt="Мужчина в светлой рубашке"
+                  title="Николай Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -408,11 +602,63 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img"
-                src="./imgs/img7.jpg"
-                alt="Михаил Ермаков ЮИ Дизайнер"
-               
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team-4-1200@1x.webp 1x,
+                    ./images/desktop/team-4-1200@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-4-768@1x.webp 1x,
+                    ./images/tablet/team-4-768@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-4-480@1x.webp 1x,
+                    ./images/mobile/team-4-480@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/desktop/team-4-1200@1x.jpg 1x,
+                    ./images/desktop/team-4-1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-4-768@1x.jpg 1x,
+                    ./images/tablet/team-4-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-4-480@1x.jpg 1x,
+                    ./images/mobile/team-4-480@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  src="./images/mobile/team-4-480@1x.jpg"
+                  loading="lazy"
+                  alt="Мужчина в очках, с бородой, в темной футболке"
+                  title="Михаил Ермаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>

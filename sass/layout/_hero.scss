@@ -71,8 +71,14 @@
 }
 
 .hero__content {
-  padding-top: 118px;
-  padding-bottom: 118px;
-  padding-left: 60px;
-  padding-right: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  max-width: 360px;
+  padding: 118px 0;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    padding: 200px 0;
+  }
 }
